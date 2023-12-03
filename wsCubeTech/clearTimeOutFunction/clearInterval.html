@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear INterval</title>
+</head>
+<body>
+    <div id="h1"></div>
+    <button onclick="stop()">stop</button>
+    <script>
+      var my=setInterval(count,1000);
+        var c=0;
+        function count(){
+document.getElementById('h1').innerHTML=c;
+c++;
+        }
+
+        function stop(){
+            clearInterval(my);
+        }
+    </script>
+    
+</body>
+</html>

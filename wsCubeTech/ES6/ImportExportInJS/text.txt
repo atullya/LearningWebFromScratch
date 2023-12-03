@@ -1,0 +1,4 @@
+Using Import and Export in JS application makes it more powerful
+They allow you to create separate and reusable components
+Export allows you to export a module to be used in another JS components
+We use Import to import the module to use it in our component

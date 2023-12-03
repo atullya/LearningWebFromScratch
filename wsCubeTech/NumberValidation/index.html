@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    Please Enter Your Number<br />
+    <input type="text" name="number" onkeyup="val(this)" />
+    <div id="res"></div>
+    
+    <script>
+      function val(elem) {
+        // document.getElementById('res').innerText=elem.value;
+        // isNaN // not a number
+        document.getElementById("res").style.color = "red";
+        if (isNaN(elem.value)) {
+          document.getElementById("res").innerText = "Please enter number only";
+        } else {
+          document.getElementById("res").innerText = "";
+          if(elem.value.length>10){
+              document.getElementById("res").innerText ="Please enter only ten digits"
+            }else{
+              document.getElementById("res").innerText = "";
+
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="res"></h1>
+    <button onclick="getDate()">Date</button>
+    <button onclick="getYear()">Year</button>
+    <button onclick="month()">Month</button>
+    <button onclick="hours()">Hours</button>
+    <button onclick="minute()">Minute</button>
+    <button onclick="second()">Second</button>
+    <script>
+      var date = new Date();
+      function getDate() {
+        document.getElementById("res").innerText = date;
+      }
+      function getYear() {
+        document.getElementById("res").innerText = date.getFullYear();
+      }
+      function month() {
+        //MOnth index start from 0 and ends at 11
+        document.getElementById("res").innerText = date.getMonth();
+      }
+      function hours() {
+        document.getElementById("res").innerText = date.getHours();
+      }
+      function minute() {
+        document.getElementById("res").innerText = date.getMinutes();
+      }
+      function second() {
+        document.getElementById("res").innerText = date.getSeconds();
+      }
+    </script>
+  </body>
+</html>

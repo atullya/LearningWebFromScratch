@@ -1,0 +1,7 @@
+A promise in JS is similar to a promise in real life. 
+when we make a promise in real life, it is a guarantee that we are going to do someting in future.
+Because promises can only be made for the future
+A promise is an object. There are 3 states of the promise object
+1. Pending: Initial State, before the Promise succeeds or fails
+2. Resolved; Completed Promise
+3. Rejected: Failed Promise

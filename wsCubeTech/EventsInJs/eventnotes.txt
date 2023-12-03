@@ -1,0 +1,35 @@
+What are events?
+In programming, event is an occurrence of any action.
+
+When we use JS in HTML pages, JS can "react" with events
+Eg, When user click the mouse button, or press any key on keyboard
+
+List of Mouse events
+1. onclick
+2. oncontextMenus : user right-click
+3.ondblclick: The user double-click on an element
+4. onmousedown: User presses a mouse button over an element
+5. onmouseenter: The pointer moves onto an element
+6. onmousemove: the pointer is moving while it is over an element
+7. onmouseover: when the pointer is moved onto an element or one of its children
+7. onmouseout: User moves the mouse pointer out of an element or one of its children
+8. onmouseup: the user releases a mouse button while over an element
+
+List of Keyboard events
+
+1. onkeydown: When the use is pressing a key down
+2. onkeypress: The moment the user starts presing a key
+3. onkeyup: The user releases a key
+
+
+List of form event
+
+1. onblur: when an element loses focus
+2. onchange: the content of a form element changes (for <input>, <select> and <textarea> elements)
+3. onfoucs: An element gets focus
+4. oninput: user input on an element
+5.oninvalid: an element is invalid
+6.onreset: A form is reset
+7.onsearch: the user writes something in a search field
+8.onselect: the user selects some text (for <input> and <textarea>)
+9. onsubmit: A form is submitted

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="#" method="post" onsubmit="return validate()">
+      <fieldset>
+        <legend>Login form</legend>
+        <div>
+          <label for="">User Name</label>
+          <input type="text" name="" />
+          <div class="clear"></div>
+        </div>
+        <div class="div">
+          <label for="">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            autocomplete="off"
+            onkeyup="passCheck(this.value)"
+          /><br />
+          <label for="confirm_password">Confirm Password</label>
+          <input
+            id="confirm_password"
+            name="confirm_password"
+            type="password"
+            onkeyup="check(this)"
+          />
+          <span id="alert"> </span>
+        </div>
+        <p>
+          <div class="password-check">8 Characters</div>
+          <div class="password-check">1 Lower Case</div>
+          <div class="password-check">1 Upper Case</div>
+          <div class="password-check">1 Numerical Character</div>
+          <div class="password-check">1 Special Character</div>
+        </p>
+        <div>
+          <span id="alert-caps"></span>
+          <button type="submit" value="SUBMIT">Submit</button>
+        </div>
+      </fieldset>
+    </form>
+    <script>
+      function passCheck(data) {
+        var passClass = document.getElementsByClassName('password-check');
+        const lowerCase = new RegExp('(?=.*[a-z])');
+        const upperCase = new RegExp('(?=.*[A-Z])');
+        const number = new RegExp('(?=.*[0-9])');
+        const specialChar = new RegExp('(?=.*[!@#\$%\^&\*])');
+        const eightChar = new RegExp('(?=.{8,})');
+
+        if (eightChar.test(data)) {
+          passClass[0].style.color = 'green';
+        } else {
+          passClass[0].style.color = 'gray';
+        }
+
+        if (lowerCase.test(data)) {
+          passClass[1].style.color = 'green';
+        } else {
+          passClass[1].style.color = 'gray';
+        }
+
+        if (upperCase.test(data)) {
+          passClass[2].style.color = 'green';
+        } else {
+          passClass[2].style.color = 'gray';
+        }
+
+        if (number.test(data)) {
+          passClass[3].style.color = 'green';
+        } else {
+          passClass[3].style.color = 'gray';
+        }
+
+        if (specialChar.test(data)) {
+          passClass[4].style.color = 'green';
+        } else {
+          passClass[4].style.color = 'gray';
+        }
+      }
+
+      function check(elem) {
+        const password = document.getElementById('password');
+        if (elem.value.length > 0) {
+          if (elem.value !== password.value) {
+            document.getElementById('alert').innerText =
+              'Confirm Password doesn\'t match';
+          } else {
+            document.getElementById('alert').innerText = '';
+          }
+        }
+      }
+
+    
+    </script>
+  </body>
+</html>

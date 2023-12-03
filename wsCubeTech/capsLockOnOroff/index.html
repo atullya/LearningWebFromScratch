@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="#" method="post" onsubmit="return validate()">
+      <fieldset>
+        <legend>Login form</legend>
+        <div>
+          <label for="">User Name</label>
+          <input type="text" name="" onkeyup="White(this.value)" />
+          <div class="clear"></div>
+        </div>
+        <div class="div">
+          <label for="">Passowrd</label>
+          <input type="password" name="" id="password" onkeyup="White(this.value)" /><br />
+          <label for="confirm_password">Confirm Password</label>
+          <input
+            id="confirm_password"
+            name="confirm_password"
+            type="password"
+            onkeyup="check(this)"
+          />
+          <span id="alert"> </span>
+          <error id="alert-caps"></error>
+        </div>
+        <div>
+          <button type="button">Submit</button>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+  <script>
+    window.addEventListener("keyup", (event) => {
+      let isCaps = event.getModifierState("CapsLock"); //checks if capslock is true or false
+      if (isCaps) {
+        document.getElementById("alert").innerHTML = "Warning! CapsLock is on";
+      } else {
+        document.getElementById("alert").innerHTML = "";
+      }
+    });
+
+    // To Check WhiteSpace
+    let patten = /\s/g;
+    //   \ checkes the exitsting of white space
+    var alert = document.getElementById("alert-caps");
+    function White(data) {
+      var isSpace = patten.test(data);
+      if (isSpace) {
+        alert.innerText = "Space is not allow";
+      } else {
+        alert.innerText = "";
+      }
+    }
+  </script>
+</html>

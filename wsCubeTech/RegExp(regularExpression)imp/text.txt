@@ -1,0 +1,22 @@
+ReExp (Regular Expression)
+
+A regular expression is an object that describes a pattern of characters.
+Regular expressions are used to perform pattern-matching and "search-and-replace" functions on text.
+
+Syntax
+/pattern/modifiers;
+or
+new RegExp(pattern, modifier)
+
+eg 
+var pattern=/atullya/is
+or
+var pattern=new RegExp('atullya','i');
+
+
+exec() Tests for a match in a string. Returns the first match
+test() Tests for a match in a string. Returns true or false
+toString() Returns the string value of the regular expression
+
+
+// To Learn Rgular expression visit website regex101.com

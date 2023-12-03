@@ -1,0 +1,12 @@
+What is math object?
+The math object contains some predefined mathematical methods
+These methods are used to perform mathematical calculations on numerical values
+To access these methods Math. keywords is use.
+
+1. Math.Pi: returns the value of Pi
+2. Math.round(x): return the ronded value of x to its nearest integer
+3. Math.pow(x,y): return the value of x to the power y
+4. Math.sqrt(x): Return the square root of x
+5. Math.abs(-x): return the positive value of x
+6. Math.ceil(x): return the value of x rounded up to its nearest integer
+7. Math.floor(x): return the value of x rounded down to its neares integer

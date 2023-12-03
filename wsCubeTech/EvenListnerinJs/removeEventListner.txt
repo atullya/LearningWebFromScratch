@@ -1,0 +1,2 @@
+The removeEventListener() method removes an event handler to the specified element.
+Syntax: element.removeEventListener(event,function)

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="openWin()">Open Facebook</button>
+    <button onclick="closeWin()">Close Facebook</button>
+    <script>
+      var win;
+      function openWin() {
+        win = window.open(
+          "https://www.facebook.com/",
+          "_blank",
+          "width=500 height=500" // specify the window features as a single string
+        );
+      }
+      function closeWin() {
+        win.close();
+      }
+    </script>
+  </body>
+</html>

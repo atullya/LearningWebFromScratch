@@ -1,0 +1,6 @@
+Even listner is used to perform any task on an event of any element. 
+Using even listener one can add and remove task on the occurrence of any event for an elemtn.
+It is a part of JS DOM.
+
+The adddEventListner() methods attaches an event handler to the specified element.
+The addEventListner() method attaches an event handler to an element withougt overwriting existing even handlers

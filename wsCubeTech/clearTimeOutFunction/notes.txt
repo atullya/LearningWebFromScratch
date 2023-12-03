@@ -1,0 +1,7 @@
+clearTimeout method
+
+The clearTimeout() method clears a timer set with the setTimeout() method.
+The ID value returned by the setTimeout() is used as the parameter for the clearTimeout() method.
+
+myVar=setTimeout("function", milliseconds)
+clearTimeout(myVar)

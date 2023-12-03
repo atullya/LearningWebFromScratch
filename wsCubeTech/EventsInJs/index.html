@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" name="u_name" />
+    <button onclick="getName()">Submit</button>
+  </body>
+  <h1></h1>
+  <script>
+    function getName() {
+      var uName = document.getElementsByName("u_name")[0].value; // 0 is used for first key because name may be many
+      document.getElementsByName("u_name")[0].value = ""; // to make the textarea clear
+      document.getElementsByTagName("h1")[0].innerHTML = uName;
+    //   document.getElementsByTagName("h1")[0].innerHTML = uName.value; // we can also do this but remove .value from line no 15
+    }
+  </script>
+</html>

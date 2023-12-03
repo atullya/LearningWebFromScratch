@@ -1,0 +1,10 @@
+The history object contains the URLs visited by the user (withing a browser window).
+The history object is part of the window object and is accessed through the window history property.
+
+
+1. back() Loads the previous URL in the history the history list   (window.history.back())
+2. forward() Loads the next URL in the history the history list   (window.history.forward())
+3. go() Loads the specific URL in the history the history list   (window.history.go())
+
+
+// Need to Watch YOuTube for this as of now...
