@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="title">
+      <p class="text">Welcome to GreatStack</p>
+    </div>
+
+    <div class="title1">
+      <p>Atullya1</p>
+      <p class="second">Atullya2</p>
+      <p>Atullya3</p>
+      <p>Atullya4</p>
+    </div>
+    <script>
+      // To get Parent
+      let txt = document.querySelector(".text");
+      // console.log(txt.parentNode);
+
+      // To get child element using Chlild
+      let parent = document.querySelector(".title1");
+      // console.log(parent.firstElementChild); //display atullya1
+      // console.log(parent.lastElementChild); //display atullya4
+      // console.log(parent.childNodes); //display all p tag from atullya1 to atullya4
+
+      // for siblings to select other siblings
+      let second = document.querySelector(".second");
+      console.log(second.previousElementSibling); //display Atuyllya1
+      console.log(second.nextElementSibling); //display Atuyllya3
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- The query seelctor ()method allows you to select the first elemetn that matches one or more CSS -->
+    <div id="container">
+      <h1 class="message">Second heading</h1>
+      <h1 class="message">Third heading</h1>
+    </div>
+    <script>
+      let msg = document.querySelector(".message");
+      console.log(msg);
+      let msg1 = document.querySelectorAll(".message");
+      console.log(msg1);
+    </script>
+  </body>
+</html>

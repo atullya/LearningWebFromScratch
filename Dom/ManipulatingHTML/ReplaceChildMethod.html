@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- use to replace curernt child with new child -->
+    <ul id="menu">
+      <li>HOme</li>
+      <li>About</li>
+      <li>Blog</li>
+      <li>Project</li>
+    </ul>
+    <script>
+      let menu = document.getElementById("menu");
+      /* Syntax
+      parentNode.replaceChild(newChild,oldChild);
+            */
+
+      // Create a new list item
+      let newitem = document.createElement("li");
+
+      // Create a new text node:
+      const textNode = document.createTextNode("Water");
+
+      newitem.appendChild(textNode);
+
+      // Replace the old list item with the new one
+      menu.replaceChild(newitem, menu.childNodes[2]);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Use appendChild() method to add a node to the end of the list of child nodes
+    of a specified parent node. The appendChild() can be used to move and existing child node to the new position within the document. -->
+    <ul id="menu">
+      <li>Home</li>
+      <li>About</li>
+      <li>Blog</li>
+      <li>Project</li>
+      <button onclick="add()">Click</button>
+      <button onclick="remove()">Remove</button>
+    </ul>
+    <script>
+      let menu = document.getElementById("menu");
+      function add() {
+        let list = document.createElement("li");
+        list.innerHTML = "ContactUS";
+        menu.appendChild(list);
+      }
+
+      function remove() {
+        menu.removeChild(menu.lastElementChild);
+      }
+
+      //  Syntax for insertBefore=>menu.insertBefore(newNode, menu.firstElementChild);
+    </script>
+  </body>
+</html>

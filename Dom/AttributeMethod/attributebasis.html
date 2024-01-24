@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="username" placeholder="username" />
+
+    <!-- Here we have 3 attribute type, id and placeholder and after = sign it's all attribute value -->
+  </body>
+  <script>
+    let inputBox = document.getElementById("username");
+
+    // console.log(inputBox.attributes);
+    // console.log(inputBox.getAttribute("type")); //to read attribute value
+    // console.log(inputBox.getAttribute("placeholder"));
+
+    //syntax for setAttribute("name","value")
+    inputBox.setAttribute("class", "user");
+    console.log(inputBox);
+
+    console.log(inputBox.hasAttribute("class")); //yedi input ma class xa bhanne true else false
+
+    //Remove Attribute
+    inputBox.removeAttribute("placeholder");
+    console.log(inputBox);
+  </script>
+</html>
